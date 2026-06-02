@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio – Contact</title>
+  <link rel="stylesheet" href="style 2.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">M&M</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="basketball.html">Basketball</a></li>
+      <li><a href="tech.html">Tech</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page">
+    <section class="section" style="padding-top: 60px;">
+      <div class="section-label">Reach Out</div>
+      <h1 class="section-title reveal">Contact</h1>
+      <p class="section-desc reveal">Have a question, collaboration idea, or just want to say hi? Fill out the form below and I'll get back to you.</p>
+
+      <div class="contact-grid">
+        <!-- LEFT: INFO -->
+        <div class="contact-info reveal">
+          <h2>Let's Connect</h2>
+          <p>I'm always open to talking about tech, basketball, or anything else. Don't be a stranger!</p>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <span>lazyyhoopz@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <span>Riyadh, Saudi Arabia</span>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🏫</div>
+            <span>Grade 11 · Web Design & Development</span>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">⏱️</div>
+            <span>Usually replies within 24 hours</span>
+          </div>
+
+          <div style="margin-top: 40px;">
+            <p style="color:var(--muted); font-size:0.85rem; margin-bottom:14px; text-transform:uppercase; letter-spacing:1px; font-weight:500;">Also find me on</p>
+      
+          </div>
+        </div>
+
+        <!-- RIGHT: FORM -->
+        <div class="contact-form reveal">
+          <h3 style="font-family:'Bebas Neue',sans-serif; font-size:1.6rem; letter-spacing:1px; margin-bottom:28px;">Send Me a Message</h3>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic…</option>
+                <option value="general">General Hello</option>
+                <option value="tech">Tech / Web Dev</option>
+                <option value="basketball">Basketball</option>
+                <option value="collab">Collaboration</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn form-submit">Send Message ✉️</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-logo">M&M</div>
+      <p>&copy; 2026 Muad portfolio. All rights reserved.</p>
+    
+    </footer>
+  </div>
+
+  <div class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
